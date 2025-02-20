@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 import { CategoryModule } from './category/category.module';
 import { ProductModule } from './product/product.module';
 import { UserModule } from './user/user.module';
+import { OrderModule } from './order/order.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { path } from 'app-root-path';
 
@@ -19,7 +20,8 @@ import { path } from 'app-root-path';
 		AuthModule,
 		CategoryModule,
 		ProductModule,
-		UserModule
+		UserModule,
+		OrderModule
 	],
 	controllers: [AppController],
 	providers: [AppService]
